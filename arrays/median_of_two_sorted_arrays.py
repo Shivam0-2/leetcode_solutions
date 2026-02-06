@@ -3,7 +3,7 @@
 #Time Complexity: O((m+n) log(m+n)) due to sorting
 #Space Complexity: O(m+n) for storing the merged array.
 
-    def findMedianSortedArrays(self, nums1, nums2):
+def findMedianSortedArrays(self, nums1, nums2):
         merged = nums1 + nums2
         merged.sort()
 
@@ -15,5 +15,3 @@
             mid1 = merged[(n // 2) - 1]
             mid2 = merged[n // 2]
             return (mid1 + mid2) / 2.0
-
-        
